@@ -1,0 +1,187 @@
+{
+  "operationalLayers": [
+    {
+      "id": "1a14074bff2-layer-42",
+      "title": "Calgary Bikeways",
+      "url": "https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/CalgaryBikways/FeatureServer/0",
+      "itemId": "8b415609f6cb492e858ff07b1b75ea07",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "fieldConfigurations": [
+          {
+            "name": "date_creat",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "short",
+              "hour12": "always",
+              "timeStyle": "short"
+            }
+          },
+          {
+            "name": "date_modif",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "short",
+              "hour12": "always",
+              "timeStyle": "short"
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 6,
+              "minimumFractionDigits": 6,
+              "useGrouping": "never"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "1a14074ca11-layer-43",
+      "title": "Calgary Park and Bike Sites",
+      "url": "https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/CalgaryParkandBikeSites/FeatureServer/0",
+      "itemId": "cc5a4429336d4f91a2d5c3771fe9eead",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "fieldConfigurations": [
+          {
+            "name": "longitude",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 6,
+              "minimumFractionDigits": 6,
+              "useGrouping": "never"
+            }
+          },
+          {
+            "name": "latitude",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 6,
+              "minimumFractionDigits": 6,
+              "useGrouping": "never"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "1a14074da99-layer-44",
+      "title": "Calgary Construction Detours",
+      "url": "https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/CalgaryConstructionDetours/FeatureServer/0",
+      "itemId": "8009aa198d584d9a81fde54ec67bd0a4",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "fieldConfigurations": [
+          {
+            "name": "Longitude",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 6,
+              "minimumFractionDigits": 6,
+              "useGrouping": "never"
+            }
+          },
+          {
+            "name": "Latitude",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 6,
+              "minimumFractionDigits": 6,
+              "useGrouping": "never"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "1a1409f6fe7-layer-6",
+      "title": "Calgary Public Bicycle Parking",
+      "url": "https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/PublicBicycleParking/FeatureServer/0",
+      "itemId": "a8381cfa37464e96b8174b7ad0e3fabe",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "fieldConfigurations": [
+          {
+            "name": "longitude",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 6,
+              "minimumFractionDigits": 6,
+              "useGrouping": "never"
+            }
+          },
+          {
+            "name": "latitude",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 6,
+              "minimumFractionDigits": 6,
+              "useGrouping": "never"
+            }
+          },
+          {
+            "name": "Indoor_Stalls",
+            "fieldFormat": {
+              "type": "number",
+              "useGrouping": "never"
+            }
+          },
+          {
+            "name": "Outdoor_Stalls",
+            "fieldFormat": {
+              "type": "number",
+              "useGrouping": "never"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "VectorTile_2846",
+        "opacity": 1,
+        "title": "Dark Gray Base",
+        "visibility": true,
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/5e9b3685f4c24d8781073dd928ebda50/resources/styles/root.json"
+      },
+      {
+        "id": "VectorTile_1645",
+        "opacity": 1,
+        "title": "Dark Gray Reference",
+        "visibility": true,
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/747cb7a5329c478cbe6981076cc879c5/resources/styles/root.json",
+        "isReference": true
+      }
+    ],
+    "title": "Dark Gray Canvas"
+  },
+  "authoringApp": "ArcGISMapViewer",
+  "authoringAppVersion": "2026.2",
+  "initialState": {
+    "viewpoint": {
+      "targetGeometry": {
+        "spatialReference": {
+          "latestWkid": 3857,
+          "wkid": 102100
+        },
+        "xmin": -12711635.72222723,
+        "ymin": 6620801.096718945,
+        "xmax": -12692144.280014537,
+        "ymax": 6637407.041113878
+      }
+    }
+  },
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "timeZone": "system",
+  "version": "2.37"
+}

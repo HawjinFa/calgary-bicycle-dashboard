@@ -1,0 +1,234 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-10-28T17:57:05.315Z",
+  "item": {
+    "title": "Calgary Bicycle Dashboard",
+    "subtitle": "Explore Calgary’s bicycle network"
+  },
+  "map": {
+    "type": "webmap",
+    "path": "./map.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "dashboard",
+    "showHeader": true,
+    "theme": {
+      "mode": "light",
+      "accent": "default"
+    },
+    "layout": {
+      "header": {
+        "hidden": false,
+        "height": "112px",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "kpi",
+            "id": "bikeway-count",
+            "title": "Bikeway segments",
+            "icon": "bicycle-travel-mode",
+            "source": {
+              "layerId": "1a14074bff2-layer-42",
+              "scope": "layer"
+            },
+            "statistic": "count",
+            "description": "Mapped Calgary bikeway segments",
+            "autoPoll": false
+          },
+          {
+            "type": "kpi",
+            "id": "park-bike-count",
+            "title": "Park-and-Bike sites",
+            "icon": "pin",
+            "source": {
+              "layerId": "1a14074ca11-layer-43",
+              "scope": "layer"
+            },
+            "statistic": "count",
+            "description": "Park-and-Bike access locations",
+            "autoPoll": false
+          },
+          {
+            "type": "kpi",
+            "id": "detour-count",
+            "title": "Construction detours",
+            "icon": "compass",
+            "source": {
+              "layerId": "1a14074da99-layer-44",
+              "scope": "layer"
+            },
+            "statistic": "count",
+            "description": "Reported bicycle detours",
+            "autoPoll": false
+          },
+          {
+            "type": "kpi",
+            "id": "parking-count",
+            "title": "Bicycle parking facilities",
+            "icon": "bicycle-travel-mode",
+            "source": {
+              "layerId": "1a1409f6fe7-layer-6",
+              "scope": "layer"
+            },
+            "statistic": "count",
+            "description": "Public bicycle-parking locations",
+            "autoPoll": false
+          }
+        ]
+      },
+      "left": {
+        "hidden": false,
+        "width": "340px",
+        "title": "Bikeway Explorer",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "selector",
+            "id": "bikeway-type-filter",
+            "title": "Filter by bikeway type",
+            "source": {
+              "layerId": "1a14074bff2-layer-42"
+            },
+            "field": "type",
+            "control": "dropdown",
+            "limit": 20
+          },
+          {
+            "type": "selector",
+            "id": "comfort-filter",
+            "title": "Filter by comfort level",
+            "source": {
+              "layerId": "1a14074bff2-layer-42"
+            },
+            "field": "comfort_le",
+            "control": "dropdown",
+            "limit": 20
+          },
+          {
+            "type": "chart",
+            "id": "bikeway-type-chart",
+            "title": "Bikeway segments by type",
+            "icon": "graph-bar",
+            "source": {
+              "layerId": "1a14074bff2-layer-42",
+              "scope": "layer"
+            },
+            "groupBy": "type",
+            "statistic": "count",
+            "shape": "bar",
+            "limit": 10,
+            "autoPoll": false
+          }
+        ]
+      },
+      "right": {
+        "hidden": false,
+        "width": "340px",
+        "title": "Network Status",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "chart",
+            "id": "bikeway-status-chart",
+            "title": "Bikeway status",
+            "icon": "graph-bar",
+            "source": {
+              "layerId": "1a14074bff2-layer-42",
+              "scope": "layer"
+            },
+            "groupBy": "status",
+            "statistic": "count",
+            "shape": "donut",
+            "limit": 6,
+            "autoPoll": false
+          },
+          {
+            "type": "chart",
+            "id": "comfort-chart",
+            "title": "Comfort level",
+            "icon": "graph-bar",
+            "source": {
+              "layerId": "1a14074bff2-layer-42",
+              "scope": "layer"
+            },
+            "groupBy": "comfort_le",
+            "statistic": "count",
+            "shape": "bar",
+            "limit": 10,
+            "autoPoll": false
+          },
+          {
+            "type": "list",
+            "id": "park-bike-list",
+            "title": "Park-and-Bike sites",
+            "source": {
+              "layerId": "1a14074ca11-layer-43",
+              "scope": "layer"
+            },
+            "titleField": "NAME",
+            "orderBy": "NAME ASC",
+            "limit": 10,
+            "autoPoll": false
+          }
+        ]
+      }
+    },
+    "widgets": [
+      {
+        "id": "legend",
+        "type": "legend",
+        "slot": "bottom-left",
+        "title": "Map legend",
+        "config": {}
+      },
+      {
+        "id": "layer-list",
+        "type": "layerList",
+        "slot": "top-right",
+        "title": "Layers",
+        "config": {}
+      },
+      {
+        "id": "home",
+        "type": "home",
+        "slot": "top-left",
+        "title": "Home",
+        "config": {}
+      },
+      {
+        "id": "default-basemap-gallery",
+        "type": "basemapGallery",
+        "slot": "top-right",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": []
+  },
+  "nova": {
+    "basename": "f32c5a4d-8377-4e0d-9b7a-9c9e6449dd08",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://www.arcgis.com",
+      "mapId": "output-30d1f3aa-4d75-48ea-b756-4617ed22071a",
+      "mapName": "Calgary Bicycle Map",
+      "viewMode": "2d",
+      "capturedAt": "2026-10-28T18:59:32.640Z",
+      "sourceItem": {
+        "itemId": "b5af1604095a4ad897d16f76d91b48a3",
+        "portalUrl": "https://www.arcgis.com"
+      }
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": [],
+    "notes": [
+      "Opened from portal item b5af1604095a4ad897d16f76d91b48a3 at https://www.arcgis.com/sharing/rest."
+    ]
+  }
+}

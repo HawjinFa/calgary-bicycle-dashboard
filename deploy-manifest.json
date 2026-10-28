@@ -1,0 +1,18 @@
+{
+  "kind": "arcgis-nova-deployable-app",
+  "version": "0.1",
+  "generatedAt": "2026-10-28T18:59:32.640Z",
+  "title": "Calgary Bicycle Dashboard",
+  "authMode": "oauth",
+  "entry": "index.html",
+  "sourceAppPath": "outputs/apps/2026-10-28T17-57-05-f32c5a4d-8377-4e0d-9b7a-9c9e6449dd08/index.html",
+  "files": {
+    "app": "app.json",
+    "map": "map.json",
+    "runtime": "app.js",
+    "auth": "standalone-auth.js"
+  },
+  "portalUrl": "https://www.arcgis.com",
+  "appId": "YtnDDQRJeM9XMWBe",
+  "deploymentUrl": "https://hawjinfa.github.io/calgary-bicycle-dashboard/"
+}
